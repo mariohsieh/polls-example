@@ -1,0 +1,17 @@
+{
+	"name": "polls-example",
+	"description": "polls example app by joe lennon",
+	"author": "mario hsieh <mariohsieh@gmail.com>",
+	"private": true,
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/mariohsieh/polls-example.git"
+	},
+	"main": "server.js",
+	"dependencies": {
+		"express": "~3.0.0",
+		"mongodb": "latest",
+		"mongoose": "latest"
+	}
+}
