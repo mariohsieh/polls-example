@@ -5,7 +5,7 @@ var express = require('express'),
 
     
 //// configuration  ***************************************
-	//database = require('./config/database'),			// load database config
+	database = require('./config/database'),			// load database config
 	port = process.env.PORT || 9001;					// set the port  
 
 app.configure(function() {
