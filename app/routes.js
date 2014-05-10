@@ -7,9 +7,9 @@ module.exports = function(app) {
 		res.sendfile('./public/index.html');
 		//res.render('index', { title: 'Polls' });
 	});
-	
-	/******** RESTFUL routing********/
-	
+
+	// ******** RESTFUL routing******* //
+
 	// get all polls
 	app.get('/polls', function(req,res) {
 		
@@ -21,8 +21,8 @@ module.exports = function(app) {
 	// get single polls
 	app.get('/polls/:id', function(req,res) {
 		
-		var pollID = req.params.id;
-		Poll.findById(pollID, '', {
+		var pollid = req.params.id;
+		Poll.findById(pollid, '', {
 			lean: true
 		},
 		function(err,doc) {
@@ -74,4 +74,5 @@ module.exports = function(app) {
 				res.json(doc);
 		});
 	});
+
 }

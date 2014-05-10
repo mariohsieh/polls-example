@@ -9,7 +9,7 @@
 	<form role="form" ng-submit="vote()">
 		<div ng-repeat="choice in poll.choices" class="radio">
 			<label>
-				<input type="radio" name="choice" ng-model="poll.userVote" value="{{choice.text}}">
+				<input type="radio" name="choice" ng-model="poll.userVote" value="{{choice._id}}">
 				{{choice.text}}
 			</label>
 		</div>
@@ -53,7 +53,7 @@
 	</p>
 	<p><hr /></p>
 	<p>
-		<a href="/polls" clas="btn btn-default" role="button">
+		<a href="/polls" class="btn btn-default" role="button">
 			<span class="glyphicon glyphicon-arrow-left"></span>
 			Back to Poll List
 		</a>

@@ -1,5 +1,5 @@
 // config/database.js
 
 module.exports = {
-	url : 'mongodb://localhost/polls'
+	url: 'mongodb://localhost/polls'
 };

@@ -1,7 +1,8 @@
 // main angular app file
 // inject dependencies here
-angular.module("polls", [
+angular.module("polls-app", [
 	"ngRoute",
 	"appRoutes",
-	"controllers"
+	"controllers",
+	"pollServices"
 ]);

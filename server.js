@@ -21,14 +21,11 @@ require('./app/routes')(app);	// pass app variable to routes page
 
 //// start applicaton  *****************************
 // use mongoose to connect to db and start server
-/*
+
 mongoose.connect(database.url, function (err) {
 	if (err) throw err;
-	//console.log('MongoDB connected');
+	console.log('MongoDB connected');
 	app.listen(port);
 	console.log("Express server running on localhost:9001");
 });
-*/
-// use this until db is set
-app.listen(port);
-console.log("Express server running on localhost:9001");
+
